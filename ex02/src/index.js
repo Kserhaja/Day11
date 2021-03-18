@@ -13,19 +13,19 @@
 function myArrayFunction(arr) {
     /*var temps = [...arr];*/
     
-averageDayTemp = [29.75, 36.75, 33, 41.5, 52.5];
-// Only change code below this line
-for (var i = 0; i<temps.length; i++){
-    for(var k = 0; k < temps[i].length; k++){
-        console.log(averageDayTemp[i][k])
+    averageDayTemp = [29.75, 36.75, 33, 41.5, 52.5];
+    // Only change code below this line
+    for (var i = 0; i<temps.length; i++){
+        for(var k = 0; k < temps[i].length; k++){
+        console.log(averageDayTemp[i][k]);
+        }
     }
-}
 
 
-// Only change code above this line
-return averageDayTemp;
+    // Only change code above this line
+    return averageDayTemp;
 }
-myArrayFunction();
+
 
 console.log(myArrayFunction(temps.push[temps]));
 
