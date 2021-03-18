@@ -10,11 +10,11 @@
 
     function myArrayFunction(myItems) {
     var myItems = [...myArr]
-    
+    // Only change code below this line
 
     myArr[2] = 6;
    return myItems;
-    
+    // Only change code above this line
 }
 myArrayFunction(myArr)[2];
 
