@@ -1,32 +1,28 @@
-// Create a temps Array here
-    var temps = [
-    
-    monday = [31, 32, 19, 37],
-    tuesday = [29, 27, 55, 36],
-    wednesday = [17, 27, 42, 46],
-    thursday = [29, 52, 21, 64],
-    friday = [91, 27, 31, 61]
-    ];
-
+// Create a temps array here
+var temps = [
+   [31, 32, 19, 37],
+   [29, 27, 55, 36],
+   [17, 27, 42, 46],
+   [29, 52, 21, 64],
+   [91, 27, 31, 61]
+];
 // End of temps array
-
 function myArrayFunction(arr) {
-    /*var temps = [...arr];*/
-    
-    averageDayTemp = [29.75, 36.75, 33, 41.5, 52.5];
+    var newTemps = [...arr]; //[][][][][]
+    var averageDayTemp = []; //
     // Only change code below this line
-    for (var i = 0; i<temps.length; i++){
-        for(var k = 0; k < temps[i].length; k++){
-        console.log(averageDayTemp[i][k]);
+    for (var i = 0; i < 5; i++) {
+        newTemps[i] = 0;
+        for (var j = 0; j < 4; j++) {
+            newTemps[i] += arr[i][j];
         }
+        newTemps[i] /= 4;
     }
-
-
+    for (var i = 0; i < 5; i++) {
+        averageDayTemp.push(newTemps[i]);
+    }
     // Only change code above this line
     return averageDayTemp;
 }
-
-
-console.log(myArrayFunction(temps.push[temps]));
-
+console.log(myArrayFunction(temps));
 module.exports = myArrayFunction;
