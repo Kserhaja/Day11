@@ -1,12 +1,11 @@
+// Only change code below this line
 function myBouncer(arr) {
-    var noviArr = [];
-    for (var i = 0; i < arr.lenght; i++) {
-        if (arr[i] == true) {
-            noviArr.push(arr[i]);
-        }
-    }
-    return noviArr;
-}
-// Only change code above this line
-console.log(myBouncer([444, "", 0, false, null, 8, undefined, "", true, 0, false]))
+    let onlyTruthyValues = arr.filter(element => Boolean(element) === true)
+    return onlyTruthyValues;
+  }
+// Only change code above this line     
+console.log(myBouncer([7, "ate", "", false, 9]));
+console.log(myBouncer(["a", "b", "c",]));
+console.log(myBouncer([false, null, 0 , NaN, undefined, ""]));
+console.log(myBouncer([null, NaN, 1 , 2, undefined]));
 module.exports = myBouncer;
