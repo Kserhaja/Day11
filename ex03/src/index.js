@@ -1,21 +1,14 @@
-// Create myPetsArray array here
+// Create myPetsArray aray here
 myPetsArray = ["Dog", "Cat"];
 // Create of myPetsArray array
 function myArrayFunction(myPets) {
-    var myNewPets = (["Bird"], ["Fish"]);
+    var myNewPets = [...myPets];
     // Only change code below this line
-
-    var FirstPet = ["Bird"];
-    var LastPet = ["Fish"];
-    myNewPets.unshift("Lion",);
-
-    myPetsArray.shift("Cat");
-    myNewPets.push("Bird");
-
-    LastPet.shift();
-
-    return myNewPets;
-    
+myNewPets.push("Bird", "Fish");
+firstPet = myNewPets.shift();
+lastPet = myNewPets.pop();
+myNewPets.unshift("Lion");
+return myNewPets;
 }
-console.log(myArrayFunction());
+console.log(myArrayFunction(myPetsArray));
 module.exports = myArrayFunction;
